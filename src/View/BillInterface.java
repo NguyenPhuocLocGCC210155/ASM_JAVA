@@ -66,7 +66,6 @@ public class BillInterface extends javax.swing.JFrame {
         this.styleList = styleList;
         frontScreen = aThis;
         cardLayout = (CardLayout) JPContainer.getLayout();
-        System.out.println(styleList);
         Image i = new ImageIcon(Index.class.getResource("/Image/barber.png")).getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH);
         ImageIcon iconbar = new ImageIcon(i);
         lbLogoBill.setIcon(iconbar);
