@@ -293,6 +293,11 @@ public class Index extends javax.swing.JFrame {
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("EXIT");
         jButton3.setBorder(null);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout JPLeftLayout = new javax.swing.GroupLayout(JPLeft);
         JPLeft.setLayout(JPLeftLayout);
@@ -1119,6 +1124,11 @@ public class Index extends javax.swing.JFrame {
         // TODO add your handling code here:
         
     }//GEN-LAST:event_btnEditCusActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jButton3ActionPerformed
     
     private void updateCus(){
         Customer c = mainc.customersList.get(currentRow);
